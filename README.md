@@ -16,15 +16,7 @@ If you find a bug or want to add a word to the dictionary please contact me via 
 
 ### New features
 
-- Added color themes pop & classic
-
-- new settings menu
-
-  - change theme
-
-  - clear stats & streak
-
-  - contact information
+- new color scheme
 
 - Code stream lined and dependencies replaced with native code
 
@@ -61,25 +53,12 @@ If you find a bug or want to add a word to the dictionary please contact me via 
 
 - set proper notification animations
 
-In settings panel add
+In manu panel add
 
 - clear settings without streak
 - clear streak
-- select pop color theme
-- select classic color theme
 - view contact and licence details
-
-- Set up color schemes in css file. Classic-light, Classic-dark, Pop-light, Pop-dark
-
 - set up aria's in HTML tag for color-theme & data-theme
-
-- let currentColorTheme = document.documentElement.getAttribute("color-theme");
-
-if ((currentColorTheme = "retro")) {
-document.documentElement.setAttribute("data-theme", "dark-retro");
-}
-
-- reset stat menu when exiting from settings menu
 
 ## Dependencies
 
