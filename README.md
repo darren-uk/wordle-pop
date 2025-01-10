@@ -1,10 +1,10 @@
-# Retro Wordle
+# Wordle POP
 
-## Version 3
+## Version 1
 
-last updated : January 2024
+last updated : January 2025
 
-Live version at https://word-game-2023.netlify.app/
+Live version at https://wordle-pop.netlify.app/
 
 ## Description
 
@@ -80,3 +80,7 @@ document.documentElement.setAttribute("data-theme", "dark-retro");
 }
 
 - reset stat menu when exiting from settings menu
+
+## Dependencies
+
+- mo.js for burst animations

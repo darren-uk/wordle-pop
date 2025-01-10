@@ -8,27 +8,37 @@
 	--green: rgb(138, 188, 177);
 	--red: rgb(238, 92, 93);
 	--yellow: rgb(241, 179, 96);
-	--white: rgb(243, 234, 193);
-	--white: rgb(242, 239, 227);
 	--white: #fff;
 	--black: rgb(90, 73, 79);
-
-	--key-background: var(--white);
-	--stat-shadow: 8px 8px 8px rgba(199, 198, 198, 0.779);
 	--grey: #787c7e;
+
+	/* General */
 	--main-background: var(--white);
+	--seperator: var(--grey);
+	--page-shadow: rgba(255, 255, 255, 0.749);
 	--icon-color: invert(0%) sepia(7%) saturate(7474%) hue-rotate(42deg)
 		brightness(95%) contrast(105%);
+	/* Game board */
 	--letter-box-border: #808080;
 	--letter-box-filled: var(--grey);
 	--letter-filled-color: var(--black);
+	/* Keyboard */
+	--key-background: var(--white);
 	--key-background: var(--white);
 	--key-letter: var(--black);
+	/* Menu */
 	--stat-background: var(--white);
 	--stat-text: var(--black);
 	--stat-border: grey;
-	--seperator: var(--grey);
-	--page-shadow: rgba(255, 255, 255, 0.749);
+	--stat-shadow: 8px 8px 8px rgba(199, 198, 198, 0.779);
+}
+
+[data-theme="light"] {
+	color-scheme: light;
+}
+
+[data-theme="dark"] {
+	color-scheme: dark;
 }
 
 [data-theme="dark"] {
@@ -241,9 +251,13 @@ header > button:hover {
 	background-color: var(--key-background);
 	color: var(--key-letter);
 	border: 1px solid var(--letter-box-border);
+	border-radius: 5px;
 }
 .light-text {
 	color: white;
+}
+.hidden-button {
+	visibility: hidden;
 }
 
 .first-row,
@@ -279,7 +293,7 @@ header {
 	vertical-align: middle;
 	position: relative;
 }
-#stat-container {
+#menu-container {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -293,13 +307,13 @@ header {
 	line-height: 1.2;
 	z-index: 30;
 }
-.back {
+.menu-hidden {
 	z-index: -1000;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 1s;
 }
-.forward {
+.menu-show {
 	z-index: 1000;
 	visibility: visible;
 	opacity: 1;
