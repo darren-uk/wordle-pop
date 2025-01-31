@@ -123,6 +123,7 @@ header > button:hover {
 	top: 12px;
 	right: 12px;
 	min-width: 50px;
+	max-width: calc(100vw - 12px);
 	min-height: 50px;
 	z-index: 20;
 }
